@@ -1,0 +1,34 @@
+{
+  "name": "logistica-inteligente",
+  "version": "1.0.0",
+  "description": "Desarrollo de Web App de logística Inteligente.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "dev": "npm run start",
+    "build": "react-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pathwalkingtechnology/logistica-inteligente.git"
+  },
+  "author": "Milton M. De Campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pathwalkingtechnology/logistica-inteligente/issues"
+  },
+  "homepage": "https://github.com/pathwalkingtechnology/logistica-inteligente#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "supabase": "^1.207.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "react-scripts": "^5.0.1"
+  }
+}
