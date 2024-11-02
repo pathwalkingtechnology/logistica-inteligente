@@ -1,19 +1,22 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const cors = require('cors');
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
+app.use(express.json());
+app.use(cors());
+
+const pedidos = [];
+
+app.post('/pedidos', (req, res) => {
+  const pedido = req.body;
+  pedidos.push(pedido);
+  res.send(`Pedido registrado con éxito`);
 });
 
-app.get('/', (req, res) => {
-  res.send('Logística Inteligente');
+app.get('/pedidos', (req, res) => {
+  res.json(pedidos);
 });
 
-app.listen(port, () => {
-  console.log(`Servidor escuchando en puerto ${port}`);
+app.listen(3000, () => {
+  console.log('Servidor escuchando en puerto 3000');
 });
-
-
