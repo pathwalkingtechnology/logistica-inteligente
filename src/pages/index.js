@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Pedidos from '../components/Pedidos';
+import Pedidos from '../../components/Pedidos';
 
 export default function Home() {
   return (

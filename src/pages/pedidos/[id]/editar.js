@@ -1,4 +1,4 @@
-import EditarPedido from '../../components/EditarPedido';
+import EditarPedido from '../../../components/EditarPedido';
 
 const EditarPedidoPage = () => {
   return <EditarPedido />;
