@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <h1>Logística Inteligente</h1>
       <Link href="/pedidos">
-        <a>Ver pedidos</a>
+        Ver pedidos
       </Link>
       <Pedidos />
     </div>
